@@ -23,7 +23,6 @@ Headquartered in India with global delivery capabilities, AushviM bridges the ga
 - **Ex-Nutanix Staff Consulting Architect & Presales Architect (2016 – Present)**
 - Over a decade leading enterprise Calm automation deployments, hybrid multi-cloud orchestration, and multi-tier application blueprints for Fortune 500 enterprises.
 - Former enterprise systems reliability engineer at Tata Consultancy Services (TCS) and Genpact Headstrong Capital Markets.
-- B.E. in Computer Science (Govt. Engineering College, Ujjain).
 
 ### **Amit Yadav** — AI Specialist & Solutions Architect
 - **Ex-Nutanix Technologist**
@@ -32,13 +31,13 @@ Headquartered in India with global delivery capabilities, AushviM bridges the ga
 
 ---
 
-## ⚡ Core Practice Areas
+## ⚡ 5 Core Practice Areas
 
-1. **NCM Calm Blueprints & Self-Service Catalogs**: Turnkey 1-click provisioning for complex multi-tier stacks (Kubernetes, Oracle RAC, SAP HANA, microservices) across AHV, AWS, and Azure.
-2. **FinOps & Cost Governance**: Automated idle VM rightsizing, automated reclamation runbooks, and budget anomaly detection.
-3. **VMware to AHV Migration**: Automated migration runbooks transitioning workloads off Broadcom VMware with zero downtime and automated blueprint rehydration.
-4. **ServiceNow ITOM Integration**: Automated bidirectional CMDB synchronization, approval workflows, and self-service catalog ordering directly into Nutanix Calm.
-5. **AIOps & Intelligent Telemetry**: Machine learning-driven capacity forecasting and self-healing cluster operations.
+1. **NCM: Nutanix Cloud Manager (Primary Flagship Focus)**: Turnkey Calm self-service blueprints, ServiceNow ITOM catalog integration, automated FinOps cost governance & cloud waste reclamation, and X-Play Day-2 autonomous runbooks.
+2. **Enterprise Migration (VMware to AHV)**: Zero-downtime Broadcom VMware exit powered by Nutanix Move, non-disruptive background data seeding, automated VirtIO driver injection, network cutovers, and Calm blueprint rehydration.
+3. **Turnkey Cluster Deployment & HCI**: Bare-metal Nutanix Foundation automated discovery, multi-node AOS & AHV deployment, Prism Central federation, and synchronous Metro Availability clustering for zero-RPO disaster recovery.
+4. **NKP: Nutanix Kubernetes Platform**: Production cloud-native container architecture on AHV with declarative Cluster API (CAPI), Cilium eBPF networking, Nutanix CSI persistent storage (Volumes & Files), and GitOps delivery.
+5. **NAI: Nutanix Enterprise AI & Private GenAI**: Turnkey private, air-gapped GenAI infrastructure on AHV featuring NVIDIA vGPU orchestration, high-throughput vLLM model serving (Llama-3, Mistral), and enterprise RAG pipelines.
 
 ---
 

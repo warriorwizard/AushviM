@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalClose = document.getElementById('modal-close-btn');
   const modalDetails = document.getElementById('modal-summary-details');
 
-  let selectedService = 'NCM Calm Blueprint Engineering';
-  let selectedPlatform = 'Nutanix AHV Private Cloud';
+  let selectedService = document.querySelector('.service-chip.selected')?.getAttribute('data-val') || 'NCM Calm & FinOps Automation';
+  let selectedPlatform = document.querySelector('.platform-chip.selected')?.getAttribute('data-val') || 'Nutanix AHV Private Cloud';
 
   // Service chip selector
   serviceChips.forEach(chip => {

@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Hero Terminal Simulation
+  // 3. Hero Terminal Simulation (5 Core Practices in Real-Time)
   const terminalLines = [
-    { text: '[INIT] Nutanix Cloud Manager v4.2 session initialized', type: 'terminal-info' },
-    { text: '[AUTH] Verified credentials for Prism Central (Cluster: US-EAST-AHV)', type: 'terminal-success' },
-    { text: '[EXEC] Compiling NCM Calm Blueprint "Enterprise_Core_Stack_v2"', type: '' },
-    { text: '[PROV] 4 AHV VMs provisioned in 18.2s (VLAN 10 DMZ)', type: 'terminal-success' },
-    { text: '[FLOW] Enforcing Microsegmentation security ruleset [STRICT]', type: 'terminal-info' },
-    { text: '[FINOPS] Right-sizing policies applied. Reclaimed 14 vCPUs idle buffer', type: 'terminal-success' },
-    { text: '[READY] Application live. RTO: 0s | Health Index: 99.98%', type: 'terminal-success' }
+    { text: '[NCM PRIORITY] Calm Blueprint "Enterprise_Prod" compiled on AHV', type: 'terminal-success' },
+    { text: '[MIGRATION] Nutanix Move: 64 vSphere VMs seeded with 0 downtime', type: 'terminal-info' },
+    { text: '[CLUSTERS] 4-Node Foundation HCI deployed & Metro witness paired', type: 'terminal-success' },
+    { text: '[NKP KUBERNETES] Declarative CAPI pool scaled (+3 worker nodes)', type: 'terminal-info' },
+    { text: '[NAI ENTERPRISE AI] vLLM Llama-3-70B serving on NVIDIA vGPU (Latency: 24ms)', type: 'terminal-success' },
+    { text: '[FINOPS] NCM Cost engine reclaimed $4,200/mo idle cloud spend', type: 'terminal-success' },
+    { text: '[STATUS] Prism Central federated health index: 99.99% OPERATIONAL', type: 'terminal-info' }
   ];
 
   const terminalBody = document.getElementById('hero-terminal-body');
