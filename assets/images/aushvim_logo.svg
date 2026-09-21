@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 44" width="46" height="42" fill="none">
+  <!-- AushviM Technologies - Symmetrical Cyber Butterfly Logo -->
+  <!-- Antennae -->
+  <path d="M 23 7 Q 18 2 14 3" stroke="#A855F7" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M 25 7 Q 30 2 34 3" stroke="#A855F7" stroke-width="1.6" stroke-linecap="round"/>
+  
+  <!-- Left Upper Wing: Official Nutanix Purple -->
+  <polygon points="24,12 4,6 13,24 23,20" fill="#8347FF"/>
+  <!-- Left Lower Wing: Deep Amethyst / Indigo -->
+  <polygon points="13,24 7,32 19,29 23,22" fill="#5B21B6"/>
+  
+  <!-- Right Upper Wing: Official Nutanix Purple (Symmetrical) -->
+  <polygon points="24,12 44,6 35,24 25,20" fill="#8347FF"/>
+  <!-- Right Lower Wing: Deep Amethyst / Indigo (Symmetrical) -->
+  <polygon points="35,24 41,32 29,29 25,22" fill="#5B21B6"/>
+  
+  <!-- Central Butterfly Spine: Electric Cyan & Crisp White -->
+  <polygon points="24,4 27,14 24,38 21,14" fill="#00E5FF"/>
+  <polygon points="24,4 27,10 24,14 21,10" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,81 @@
+:root {
+  /* ==========================================================================
+     AushviM Technologies - Nutanix Purple (#8347FF) & Pure Pitch Black (#000000)
+     Solid Professional Enterprise Theme - Zero Button Gradients, Zero Emojis
+     ========================================================================== */
+
+  /* Backgrounds - True Pitch Black & Deep Obsidian */
+  --bg-primary: #000000;
+  --bg-secondary: #050608;
+  --bg-tertiary: #0A0C10;
+  --bg-elevated: #111319;
+  --bg-card: rgba(11, 13, 18, 0.82);
+  --bg-card-hover: rgba(18, 20, 28, 0.95);
+  --bg-glass: rgba(6, 7, 10, 0.9);
+  --bg-terminal: #020304;
+
+  /* Official Nutanix Purple Palette (Solid Hex) */
+  --accent-primary: #8347FF;
+  --accent-primary-hover: #6F35E0;
+  --accent-primary-dark: #5824BD;
+  --accent-primary-glow: rgba(131, 71, 255, 0.3);
+  
+  /* Nutanix Purple Tints & Highlights */
+  --accent-light: #A77BFF;
+  --accent-lavender: #C4B5FD;
+  --accent-sky: #A77BFF;
+  --accent-cyan: #9B6BFF;
+
+  /* Status Indicators (Contextual) */
+  --color-success: #10B981;
+  --color-success-glow: rgba(16, 185, 129, 0.2);
+  --color-warning: #F59E0B;
+  --color-info: #8347FF;
+
+  /* Neutrals & Typography */
+  --text-primary: #FFFFFF;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
+  --border-light: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-glow: rgba(131, 71, 255, 0.45);
+  --border-purple-solid: #8347FF;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 5rem;
+  --spacing-4xl: 7rem;
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows (Tuned for Solid Nutanix Purple) */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.75);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.88);
+  --shadow-purple: 0 4px 18px rgba(131, 71, 255, 0.35);
+  --shadow-purple-hover: 0 6px 24px rgba(131, 71, 255, 0.5);
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --max-width: 1280px;
+  --header-height: 80px;
+}
