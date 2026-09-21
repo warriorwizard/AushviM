@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 3. Hero Terminal Simulation (5 Core Practices in Real-Time)
   const terminalLines = [
-    { text: '[NCM PRIORITY] Calm Blueprint "Enterprise_Prod" compiled on AHV', type: 'terminal-success' },
+    { text: '[NCM AUTOMATION] Calm Blueprint "Enterprise_Prod" compiled on AHV', type: 'terminal-success' },
     { text: '[MIGRATION] Nutanix Move: 64 vSphere VMs seeded with 0 downtime', type: 'terminal-info' },
     { text: '[CLUSTERS] 4-Node Foundation HCI deployed & Metro witness paired', type: 'terminal-success' },
     { text: '[NKP KUBERNETES] Declarative CAPI pool scaled (+3 worker nodes)', type: 'terminal-info' },

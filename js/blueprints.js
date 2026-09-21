@@ -28,7 +28,7 @@ const svgIcons = {
 const blueprintData = {
   ncm: {
     id: 'ncm',
-    title: 'NCM Calm Self-Service & FinOps Automation (Primary Focus)',
+    title: 'NCM Calm Self-Service & FinOps Automation',
     desc: 'Self-healing, auto-scaling multi-tier enterprise stack deployed across Nutanix AHV with dynamic AWS Route 53 routing, Flow microsegmentation, and automated FinOps cost governance.',
     nodes: [
       { name: 'Self-Service Portal', sub: 'NCM Calm / ServiceNow', type: 'cloud', iconKey: 'cloud' },
