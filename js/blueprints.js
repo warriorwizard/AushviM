@@ -72,26 +72,27 @@ actions:
 
   migration: {
     id: 'migration',
-    title: 'VMware ESXi to Nutanix AHV Live Migration Pipeline',
-    desc: 'Zero-downtime, risk-free enterprise workload transition powered by Nutanix Move automation, automated driver injection, network cutover, and automated Calm rehydration.',
+    title: 'Turnkey Cluster Migration & Live Workload Cutover',
+    desc: 'Zero-downtime enterprise cluster modernization off Broadcom VMware to Nutanix AHV. Bare-metal Foundation cluster discovery and sizing, Nutanix Move non-disruptive data seeding, automated VirtIO driver injection, and instantaneous network cutover.',
     nodes: [
-      { name: 'Legacy Source', sub: 'VMware vSphere / SAN', type: 'vm', iconKey: 'vm' },
+      { name: 'Legacy vSphere', sub: 'VMware ESXi / SAN', type: 'vm', iconKey: 'vm' },
       { name: 'Nutanix Move', sub: 'Data Seeding Engine', type: 'move', iconKey: 'move' },
-      { name: 'Target Storage', sub: 'Nutanix Distributed Storage', type: 'db', iconKey: 'db' },
-      { name: 'Target Hypervisor', sub: 'Nutanix AHV Cluster', type: 'cluster', iconKey: 'cluster' },
-      { name: 'Cutover & Audit', sub: 'Instant Zero-Downtime Swap', type: 'sec', iconKey: 'sec' }
+      { name: 'Foundation HCI', sub: '4-Node AHV Pod', type: 'cluster', iconKey: 'cluster' },
+      { name: 'AOS Storage Pool', sub: 'Distributed Storage', type: 'db', iconKey: 'db' },
+      { name: 'Live Cutover', sub: 'Zero-Downtime Swap', type: 'sec', iconKey: 'sec' }
     ],
-    actions: ['Discover vSphere VMs', 'Start Data Seeding', 'Verify Test Failover', 'Cutover Workload', 'Decommission ESXi'],
-    code: `# Nutanix Move Automated Migration Plan Spec
-migration_plan:
-  name: VMware_ESXi_to_AHV_Factory_01
-  source_environment:
-    type: VMware_vSphere_7.0
-    vcenter: "vcsa-prod.corp.internal"
-  target_environment:
-    type: Nutanix_AHV_Cluster
+    actions: ['Foundation Discovery', 'Seed Workload Data', 'Sandbox Test Failover', 'Execute Live Cutover', 'Decommission ESXi'],
+    code: `# Nutanix Turnkey Cluster Migration & Move Specification
+cluster_migration_plan:
+  name: Turnkey_VMware_to_AHV_Factory_01
+  target_cluster:
+    name: "AUSHVIM-PROD-HCI-01"
+    hypervisor: "Nutanix_AHV"
+    nos_version: "6.8.1_LTS"
     prism_central: "pc-prod.corp.internal"
-    storage_container: "AHV-SSD-Tier-01"
+  source_environment:
+    type: "VMware_vSphere_7.0"
+    vcenter: "vcsa-prod.corp.internal"
   network_mapping:
     source_portgroup: "DPortGroup-VLAN20"
     target_ahv_network: "AHV-Prod-VLAN20"
@@ -101,40 +102,6 @@ migration_plan:
     max_concurrent_seeds: 16
     cutover_schedule: "immediate_on_sync"
     post_migration_hook: "ncm_calm_rehydrate.py"`
-  },
-
-  cluster: {
-    id: 'cluster',
-    title: 'Turnkey Multi-Cluster HCI Deployment & Metro Availability',
-    desc: 'Automated bare-metal Nutanix Foundation discovery, multi-node AHV hyperconverged clustering, Prism Central federation, synchronous Metro replication, and automated DR.',
-    nodes: [
-      { name: 'Hardware Discovery', sub: 'Nutanix Foundation', type: 'cluster', iconKey: 'cluster' },
-      { name: 'AHV HCI Nodes', sub: '4-Node Enterprise Pod', type: 'app', iconKey: 'app' },
-      { name: 'Storage Fabric', sub: 'AOS Distributed Storage', type: 'db', iconKey: 'db' },
-      { name: 'Prism Central', sub: 'Multi-Cluster Federation', type: 'cloud', iconKey: 'cloud' },
-      { name: 'Metro Witness', sub: 'Zero-RPO Synchronous DR', type: 'sync', iconKey: 'sync' }
-    ],
-    actions: ['Foundation Discovery', 'Deploy AOS & AHV', 'Init Storage Pool', 'Register Prism Central', 'Enable Metro DR'],
-    code: `# Nutanix Foundation Cluster Deployment Specification
-cluster_name: "AUSHVIM-PROD-HCI-01"
-hypervisor: "Nutanix_AHV"
-nos_version: "6.8.1_LTS"
-redundancy_factor: 2
-nodes:
-  - ipmi_ip: "10.10.40.11"
-    host_ip: "10.10.10.11"
-    cvm_ip:  "10.10.10.21"
-  - ipmi_ip: "10.10.40.12"
-    host_ip: "10.10.10.12"
-    cvm_ip:  "10.10.10.22"
-  - ipmi_ip: "10.10.40.13"
-    host_ip: "10.10.10.13"
-    cvm_ip:  "10.10.10.23"
-  - ipmi_ip: "10.10.40.14"
-    host_ip: "10.10.10.14"
-    cvm_ip:  "10.10.10.24"
-virtual_ip: "10.10.10.100"
-prism_central_vip: "10.10.20.50"`
   },
 
   nkp: {

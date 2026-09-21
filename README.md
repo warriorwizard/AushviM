@@ -31,13 +31,12 @@ Headquartered in India with global delivery capabilities, AushviM bridges the ga
 
 ---
 
-## ⚡ 5 Core Practice Areas
+## ⚡ 4 Core Practice Areas
 
-1. **NCM: Nutanix Cloud Manager (Primary Flagship Focus)**: Turnkey Calm self-service blueprints, ServiceNow ITOM catalog integration, automated FinOps cost governance & cloud waste reclamation, and X-Play Day-2 autonomous runbooks.
-2. **Enterprise Migration (VMware to AHV)**: Zero-downtime Broadcom VMware exit powered by Nutanix Move, non-disruptive background data seeding, automated VirtIO driver injection, network cutovers, and Calm blueprint rehydration.
-3. **Turnkey Cluster Deployment & HCI**: Bare-metal Nutanix Foundation automated discovery, multi-node AOS & AHV deployment, Prism Central federation, and synchronous Metro Availability clustering for zero-RPO disaster recovery.
-4. **NKP: Nutanix Kubernetes Platform**: Production cloud-native container architecture on AHV with declarative Cluster API (CAPI), Cilium eBPF networking, Nutanix CSI persistent storage (Volumes & Files), and GitOps delivery.
-5. **NAI: Nutanix Enterprise AI & Private GenAI**: Turnkey private, air-gapped GenAI infrastructure on AHV featuring NVIDIA vGPU orchestration, high-throughput vLLM model serving (Llama-3, Mistral), and enterprise RAG pipelines.
+1. **NCM: Nutanix Cloud Manager (Flagship Focus)**: Turnkey Calm self-service blueprints, ServiceNow ITOM catalog integration, automated FinOps cost governance & cloud waste reclamation, and X-Play Day-2 autonomous runbooks.
+2. **Turnkey Cluster Migration (VMware to AHV HCI)**: End-to-end workload and infrastructure modernization combining bare-metal Nutanix Foundation discovery with Nutanix Move zero-downtime delta seeding, automated VirtIO driver injection, live cutover, and Calm blueprint rehydration.
+3. **NKP: Nutanix Kubernetes Platform**: Production cloud-native container architecture on AHV with declarative Cluster API (CAPI), Cilium eBPF networking, Nutanix CSI persistent storage (Volumes & Files), and GitOps delivery.
+4. **NAI: Nutanix Enterprise AI & Private GenAI**: Turnkey private, air-gapped GenAI infrastructure on AHV featuring NVIDIA vGPU orchestration, high-throughput vLLM model serving (Llama-3, Mistral), and enterprise RAG pipelines.
 
 ---
 

@@ -35,11 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Hero Terminal Simulation (5 Core Practices in Real-Time)
+  // 3. Hero Terminal Simulation (4 Core Practices in Real-Time)
   const terminalLines = [
     { text: '[NCM AUTOMATION] Calm Blueprint "Enterprise_Prod" compiled on AHV', type: 'terminal-success' },
-    { text: '[MIGRATION] Nutanix Move: 64 vSphere VMs seeded with 0 downtime', type: 'terminal-info' },
-    { text: '[CLUSTERS] 4-Node Foundation HCI deployed & Metro witness paired', type: 'terminal-success' },
+    { text: '[CLUSTER MIGRATION] Nutanix Move: 64 vSphere VMs seeded to 4-Node AHV Pod', type: 'terminal-info' },
     { text: '[NKP KUBERNETES] Declarative CAPI pool scaled (+3 worker nodes)', type: 'terminal-info' },
     { text: '[NAI ENTERPRISE AI] vLLM Llama-3-70B serving on NVIDIA vGPU (Latency: 24ms)', type: 'terminal-success' },
     { text: '[FINOPS] NCM Cost engine reclaimed $4,200/mo idle cloud spend', type: 'terminal-success' },
