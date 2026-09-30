@@ -24,10 +24,6 @@ Headquartered in India with global delivery capabilities, AushviM bridges the ga
 - Over a decade leading enterprise Calm automation deployments, hybrid multi-cloud orchestration, and multi-tier application blueprints for Fortune 500 enterprises.
 - Former enterprise systems reliability engineer at Tata Consultancy Services (TCS) and Genpact Headstrong Capital Markets.
 
-### **Amit Yadav** — AI Specialist & Solutions Architect
-- **Ex-Nutanix Technologist**
-- Specializes in artificial intelligence, AIOps, intelligent agent orchestration, and automated multi-cloud operations.
-- Drives AushviM’s AI innovation initiatives, bridging modern AI frameworks, predictive telemetry, and autonomous execution models with enterprise Nutanix Cloud Manager architectures.
 
 ---
 
@@ -49,20 +45,6 @@ Headquartered in India with global delivery capabilities, AushviM bridges the ga
   - `js/scoper.js`: Architecture audit scoping form with instant confirmation modals.
   - `js/app.js`: Pitch black starlight cluster particle mesh background canvas.
 - **Brand Identity**: Freestanding Symmetrical Cyber Butterfly Vector Mark (`assets/images/aushvim_logo.svg`) in official Nutanix Purple (`#8347FF`), Amethyst (`#5B21B6`), and Electric Cyan (`#00E5FF`).
-
----
-
-## 🌐 Live Deployment & GitHub Pages
-
-This repository is hosted on **GitHub Pages**:
-
-🔗 **[https://warriorwizard.github.io/AushviM/](https://warriorwizard.github.io/AushviM/)**
-
-To enable GitHub Pages:
-1. Navigate to **Settings** > **Pages** in the repository.
-2. Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
-3. Select branch: `main`, folder: `/ (root)`.
-4. Click **Save**.
 
 ---
 
